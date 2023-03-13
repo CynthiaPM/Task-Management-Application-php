@@ -31,3 +31,5 @@ class ErrorController extends Controller
 		error_log($this->_exception->getTraceAsString());
 	}
 }
+
+?>

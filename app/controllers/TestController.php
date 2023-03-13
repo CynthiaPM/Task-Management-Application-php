@@ -12,3 +12,4 @@ class TestController extends ApplicationController
 		echo "hello from test::check";
 	}
 }
+?>
