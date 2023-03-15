@@ -17,16 +17,23 @@ $data = json_decode($json_data, true);
 $people = $data['people'];
 
 // Iterar sobre la lista de personas y mostrar sus nombres y contraseñas
+echo "<pre>";
 foreach ($people as $person) {
     $name = $person['name'];
     $password = $person['password'];
-    echo "Nombre: " . $name ."\n";
+    /*foreach ($task as $key) {
+        $key->$task = $person ['task'];
+    }*/
+    
+    //echo "Nombre: " . $name ."\n task: ".$task."\n";
+    echo "Nombre: " . $name . ", tiene la contraseña: ".$password."\n";
 }
 
-$database = new Database();
-$database->addUserData();
-$database->createJSONDatabase();
+fetch('https://jsonplaceholder.typicode.com/posts')
+.then(response => {return response.json()})
+.then(response=>{console.log(response.json)})
 
+echo "</pre>";
 ?>
 </body>
 </html>

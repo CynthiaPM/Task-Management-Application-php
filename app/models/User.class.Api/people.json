@@ -1,139 +1,24 @@
 {
 	"people": [{
 			"name": "John Smith",
-			"password": "joh123"
+			"password": "joh123",
+			"task":["tarea1","tarea2"]
 		},
 		{
 			"name": "Jane Doe",
-			"password": "jan456"
+			"password": "jan456",
+			"task":["tarea3","tarea4"]
 		},
 		{
 			"name": "Bob Johnson",
-			"password": "bob789"
+			"password": "bob789",
+			"task":["tarea5","tarea6"]
 		},
 		{
 			"name": "Mary Williams",
-			"password": "mar012"
-		},
-		{
-			"name": "Tom Davis",
-			"password": "tom345"
-		},
-		{
-			"name": "Sara Lee",
-			"password": "sar678"
-		},
-		{
-			"name": "Mike Brown",
-			"password": "mik901"
-		},
-		{
-			"name": "Emily Garcia",
-			"password": "emi234"
-		},
-		{
-			"name": "David Hernandez",
-			"password": "dav567"
-		},
-		{
-			"name": "Lisa Rodriguez",
-			"password": "lis890"
-		},
-		{
-			"name": "Kevin Martinez",
-			"password": "kev123"
-		},
-		{
-			"name": "Jessica Davis",
-			"password": "jes456"
-		},
-		{
-			"name": "Ryan Wilson",
-			"password": "rya789"
-		},
-		{
-			"name": "Kelly Taylor",
-			"password": "kel012"
-		},
-		{
-			"name": "Chris Clark",
-			"password": "chr345"
-		},
-		{
-			"name": "Megan Green",
-			"password": "meg678"
-		},
-		{
-			"name": "Steven Wright",
-			"password": "ste901"
-		},
-		{
-			"name": "Katie Lee",
-			"password": "kat234"
-		},
-		{
-			"name": "Tony Garcia",
-			"password": "ton567"
-		},
-		{
-			"name": "Bethany Davis",
-			"password": "bet890"
-		},
-		{
-			"name": "Jason Johnson",
-			"password": "jas123"
-		},
-		{
-			"name": "Linda Hernandez",
-			"password": "lin456"
-		},
-		{
-			"name": "Alex Rodriguez",
-			"password": "ale789"
-		},
-		{
-			"name": "Amanda Martinez",
-			"password": "ama012"
-		},
-		{
-			"name": "Jeremy Wilson",
-			"password": "jer345"
-		},
-		{
-			"name": "Ashley Taylor",
-			"password": "ash678"
-		},
-		{
-			"name": "Mark Clark",
-			"password": "mar901"
-		},
-		{
-			"name": "Rachel Green",
-			"password": "rac234"
-		},
-		{
-			"name": "Daniel Wright",
-			"password": "dan567"
-		},
-		{
-			"name": "Maggie Lee",
-			"password": "mag890"
-		},
-		{
-			"name": "Gregg Garcia",
-			"password": "gre123"
-		},
-		{
-			"name": "Haley Davis",
-			"password": "hal456"
-		},
-		{
-			"name": "Rob Johnson",
-			"password": "rob789"
-		},
-		{
-			"name": "Tina Hernandez",
-			"password": "tin654"
+			"password": "mar012",
+			"task":["tarea7","tarea8"]
 		}
+				
 	]
 }
