@@ -11,5 +11,10 @@ class TestController extends ApplicationController
 	{
 		echo "hello from test::check";
 	}
+
+	public function saludoAction(){
+
+	echo "este es el saludo";
+	}
 }
 ?>
