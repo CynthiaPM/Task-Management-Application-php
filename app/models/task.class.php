@@ -1,25 +1,19 @@
 <<?php 
-
-enum taskStatus {
-    case done;
-    case progreso;
-    case finish;
-}
-
-class task {
-
-    private $name;
-    private taskStatus $status;
-    private $date_start;
-    private $date_ending;
-    
-    
-    /*enum taskProgress {
+/*enum taskProgress {
         case done;
         case progreso;
         case finish;
 
     }*/
+class task {
+
+    private $name;
+    private $status;
+    private $date_start;
+    private $date_ending;
+    
+    
+    
 
     //constructor
 
