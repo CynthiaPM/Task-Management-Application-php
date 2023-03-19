@@ -18,6 +18,7 @@ $people = $data['people'];
 
 // Iterar sobre la lista de personas y mostrar sus nombres y contraseñas
 echo "<pre>";
+<<<<<<< HEAD
 /*foreach ($people as $person) {
     $name = $person['name'];
     $password = $person['password'];
@@ -39,6 +40,24 @@ echo "</pre>";
 /*fetch('https://jsonplaceholder.typicode.com/posts')
 .then(response => {return response.json()})
 .then(response=>{console.log(response.json)})*/
+=======
+foreach ($people as $person) {
+    $name = $person['name'];
+    $password = $person['password'];
+    /*foreach ($task as $key) {
+        $key->$task = $person ['task'];
+    }*/
+    
+    //echo "Nombre: " . $name ."\n task: ".$task."\n";
+    echo "Nombre: " . $name . ", tiene la contraseña: ".$password."\n";
+}
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+.then(response => {return response.json()})
+.then(response=>{console.log(response.json)})
+
+echo "</pre>";
+>>>>>>> db105fcdecd51c6fd2b428b5d430e4adb4aa8ffa
 ?>
 </body>
 </html>
