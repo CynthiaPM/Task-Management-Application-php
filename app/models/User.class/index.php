@@ -31,27 +31,27 @@ require_once 'User.Class.php';
 		</tr>
 		<?php
 
-			// Crear un objeto de la clase User
+			// Create an object from the user class
 			$user = new User();
 			
-			// Obtener la lista de personas
+			// Get the list from people
 			$people = $user->getAll();
 			
 			if (isset($_POST['submit'])) {
-				// Obtener los valores del formulario
+				// Get the forms values
 				$name = $_POST['name'];
 				$password = $_POST['password'];
 				$tasks = explode(",", $_POST['tasks']);
 			
-				// Crear un nuevo registro
+				// Create a new record
 				$user->create($name, $password, $tasks);
 			
-				// Redirigir a la página actual para actualizar la tabla
+				// Redirect to the current page to update the table
 				header("Location: " . $_SERVER['PHP_SELF']);
 				exit();
 			  }
 
-			// Iterar sobre las personas y mostrar su información
+			// Iterate for the people and show their information
 			echo "<br/>";
 			echo "<br/>";
 			echo "<br/>";
@@ -62,13 +62,13 @@ require_once 'User.Class.php';
 				echo "<tr><td>$name</td><td>$password</td><td>$tasks</td></tr>";
 			}
 			
-			// Crear un nuevo registro
+			// Create a new record
 			$user->create('Juan Perez', 'juan456', ['tarea9']);
 			
-			// Actualizar un registro existente
+			// Update an existing record
 			$user->update(0, 'John Doe', 'joh123', ['tarea1', 'tarea2', 'tarea10']);
 			
-			// Eliminar un registro existente
+			// Delete and exitind record
 			$user->delete(3);
 		?>
 	</table>
