@@ -12,4 +12,4 @@
 $routes = array(
 	'/test' => 'test#index',
 );
-//array_push($routes, "https://www.lavanguardia.com/");
+
