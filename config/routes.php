@@ -11,6 +11,6 @@
  */
 $routes = array(
 	'/test' => 'test#index',
-	'/createAccount' => 'add#check'
+	'/createAccount' => 'application#check'
 );
 

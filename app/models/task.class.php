@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 /*enum taskProgress {
         case done;
         case progreso;
@@ -52,12 +52,6 @@ class task {
     public function setStatus($status){
         $this -> status = $status;
     }
-
-
-    
-
-
-
 }
 
 ?>
