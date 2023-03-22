@@ -35,12 +35,23 @@ class task {
         return $this -> status;
     }
 
+    public function getStartingDate (){
+        return $this -> date_start;
+    }
+
+    public function getEndingDate (){
+        return $this -> date_ending;
+    }
+
     //setters
 
     public function setName($name){
         $this-> name = $name;
     }
 
+    public function setStatus($status){
+        $this -> status = $status;
+    }
 
 
     
