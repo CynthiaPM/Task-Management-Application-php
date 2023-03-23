@@ -61,6 +61,10 @@ class task extends Model {
         
     }
 
+    function editTask($id){
+        
+    }
+
         
 }
 
