@@ -6,17 +6,22 @@
  */
 require_once (__DIR__ .'/../models/task.class.php');
 
-class ApplicationController extends Controller 
+class TaskController extends Controller 
 {
 	public function indexAction()
 	{
-		$this->view->message = "hello from test::index";
+		$this->view->content();
 	}
 
 	public function taskListAction(){
-		
+				
 		$taskList= new task();
-		$this->view->_data = $taskList->getTasks();	
+		$this->view->content = $taskList->getTasks();	
+	}
+
+	public function viewTaskAction(){
+		$taskList= new task();
+		$this->view->content = $taskList->getTaskById($_GET['id']);
 	}
 
 }

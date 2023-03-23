@@ -10,7 +10,9 @@
  * '/calendar' => 'calendar#index'
  */
 $routes = array(
-	'/test' => 'test#index',
-	'/createAccount' => 'add#check'
+	'/index' => 'Task#taskList',
+	'/view' => 'task#viewTask',
+	
+
 );
 

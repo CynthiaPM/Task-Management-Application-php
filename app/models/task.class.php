@@ -1,52 +1,71 @@
-<<?php 
-/*enum taskProgress {
-        case done;
-        case progreso;
-        case finish;
+<?php 
+require_once __DIR__.'../../../lib/base/Model.php';
+class task extends Model {
 
-    }*/
-class task {
-
-    private $name;
-    private $status;
-    private $date_start;
-    private $date_ending;
-    
-    
-    
+    private $jsonFile;
+    private $tasks;
 
     //constructor
 
-    function __construct($name,$status,$date_start)
+    public function __construct()
     {
-        $this -> name = $name;
-        $this -> status = $status;
-        $this -> date_start = $date_start;
-        $this -> date_ending = null;
-    }
-
-    //getters 
-
-    public function getName(){
-        return $this -> name;
-    }
-
-    public function getStatus(){
-        return $this -> status;
-    }
-
-    //setters
-
-    public function setName($name){
-        $this-> name = $name;
+        $this-> jsonFile = file_get_contents( __DIR__.'../../../web/database.json');
+        $this-> tasks= json_decode($this->jsonFile,true);
     }
 
 
+    public function getTasks(){
 
-    
+        return $this->tasks;
+
+//prueba
+    //    echo '<pre>';
+    //     var_dump($this->tasks) ;
+             
+        
+    }
+
+    function getTaskById($id){
+
+        $users= $this->tasks;
+        foreach($users as $user){
+            if($user['id'] == $id){
+                return $user;
+                // echo '<pre>';
+                // var_dump($user);
+            }
+        }
+        return null;
 
 
 
+    }
+
+    function createTask($data){
+
+        
+    }
+
+    // function updateTask($data,$id){
+    //     $users= $this->tasks;
+    //     foreach($users as $i => $user){
+    //         if($user['id'] == $id){
+
+    //         }
+
+
+    // }
+
+    function deleteTask($id){
+
+        
+    }
+
+    function editTask($id){
+        
+    }
+
+        
 }
 
 ?>
