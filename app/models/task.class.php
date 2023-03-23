@@ -1,57 +1,67 @@
 <?php 
-/*enum taskProgress {
-        case done;
-        case progreso;
-        case finish;
+require_once __DIR__.'../../../lib/base/Model.php';
+class task extends Model {
 
-    }*/
-class task {
-
-    private $name;
-    private $status;
-    private $date_start;
-    private $date_ending;
-    
-    
-    
+    private $jsonFile;
+    private $tasks;
 
     //constructor
 
-    function __construct($name,$status,$date_start)
+    public function __construct()
     {
-        $this -> name = $name;
-        $this -> status = $status;
-        $this -> date_start = $date_start;
-        $this -> date_ending = null;
+        $this-> jsonFile = file_get_contents( __DIR__.'../../../web/database.json');
+        $this-> tasks= json_decode($this->jsonFile,true);
     }
 
-    //getters 
 
-    public function getName(){
-        return $this -> name;
+    public function getTasks(){
+
+        return $this->tasks;
+
+//prueba
+    //    echo '<pre>';
+    //     var_dump($this->tasks) ;
+             
+        
     }
 
-    public function getStatus(){
-        return $this -> status;
+    function getTaskById($id){
+
+        $users= $this->tasks;
+        foreach($users as $user){
+            if($user['id'] == $id){
+                return $user;
+                // echo '<pre>';
+                // var_dump($user);
+            }
+        }
+        return null;
+
+
+
     }
 
-    public function getStartingDate (){
-        return $this -> date_start;
+    function createTask($data){
+
+        
     }
 
-    public function getEndingDate (){
-        return $this -> date_ending;
+    // function updateTask($data,$id){
+    //     $users= $this->tasks;
+    //     foreach($users as $i => $user){
+    //         if($user['id'] == $id){
+
+    //         }
+
+
+    // }
+
+    function deleteTask($id){
+
+        
     }
 
-    //setters
-
-    public function setName($name){
-        $this-> name = $name;
-    }
-
-    public function setStatus($status){
-        $this -> status = $status;
-    }
+        
 }
 
 ?>
