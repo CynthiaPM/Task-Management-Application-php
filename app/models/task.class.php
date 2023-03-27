@@ -41,6 +41,10 @@ class task extends Model {
 
     }
 
+    function intoJson($addTask){
+        file_put_contents(__DIR__ . '../../../web/database.json', json_encode($addTask, JSON_PRETTY_PRINT));
+    }
+
     function createTask($data){
 
         
@@ -61,7 +65,36 @@ class task extends Model {
         
     }
 
-    function editTask($id){
+    function completeTask($id){
+        $data= $this -> tasks;
+
+        foreach($data as $i => $dataStatus){
+            if($dataStatus['id'] == $id ){
+                $data [$i]['end_date'] = date("Y-m-d");
+
+                $this -> intoJson($data);
+            }
+        }
+
+
+    }
+
+    function editTask($id,$user,$taskName,$status){
+
+        $data = $this ->tasks;
+        //busco en el array de tareas tomando en cuenta el indice
+        foreach ($data as $i => $dataChange){
+            if ($dataChange['id'] == $id){
+                $data[$i]['task']=$taskName;
+                $data[$i]['user']=$user;
+                $data[$i]['status']=$status;
+
+                $this -> intoJson($data);
+            }
+
+            
+        }
+
         
     }
 

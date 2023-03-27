@@ -24,6 +24,43 @@ class TaskController extends Controller
 		$this->view->content = $taskList->getTaskById($_GET['id']);
 	}
 
+	public function addTaskAction(){
+		$this->view->content(); 
+	}
+
+	public function editTaskAction(){
+		$taskList= new task();
+		$this->view->content = $taskList->getTaskById($_GET['id']);
+				
+		if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+			$taskList -> editTask($_GET["id"],$_POST['user'],$_POST['task'],$_POST['status']);
+			
+			//le indico donde ir una vez suceda el post
+			// header( 'location: index');
+		}
+
+		$taskList= new task();
+
+		if($_SERVER['REQUEST_METHOD'] == 'POST'){
+			
+			if($_POST['status'] === 'completed'){
+
+				$taskList -> completeTask($_GET['id']);	
+
+				header( 'location: index');
+			}
+
+			header( 'location: index');
+
+		}
+
+		
+		
+		
+					
+	}
+
 }
 
 ?>
