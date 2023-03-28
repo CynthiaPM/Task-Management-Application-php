@@ -24,8 +24,6 @@ class TaskController extends Controller
 		$this->view->content = $taskList->getTaskById($_GET['id']);
 	}
 
-	public function addTaskAction() {
-	}
 	public function createTaskAction() {
 		$taskList = new task();
 		$isValid = true;

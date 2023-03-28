@@ -45,18 +45,20 @@ class task extends Model {
         file_put_contents(__DIR__ . '../../../web/database.json', json_encode($addTask, JSON_PRETTY_PRINT));
     }
 
-    function createTask($user, $task){
-       
-        $data = $this ->tasks;
 
-        $lastTask = end($this->tasks);
+
+    function createTask($user, $task){
+        $data= array();
+
+$lastTask = end($this->tasks);
         $newId = $lastTask['id'] + 1;
 
         $data['id'] = $newId;
         $data['user'] = $user;
         $data['task'] = $task;
         $data['status'] = 'pending';
-        $data['start_date'] = date('Y-m-d h:i:sa');
+        $data['start_date'] = date('Y-m-d');
+        $data['end_date']= null;
 
         $this->tasks[] = $data;
         $this->intoJson($this->tasks);
@@ -96,7 +98,7 @@ function deleteTask($id){
     }
 
     function editTask($id,$user,$taskName,$status){
-
+        //traigo todo el array
         $data = $this ->tasks;
         //busco en el array de tareas tomando en cuenta el indice
         foreach ($data as $i => $dataChange){

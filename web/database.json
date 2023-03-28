@@ -35,8 +35,16 @@
         "id": 5,
         "user": "Michael",
         "task": "Present project to stakeholders",
-        "status": "pending",
+        "status": "completed",
         "start_date": "2023-03-15",
+        "end_date": "2023-03-28"
+    },
+    {
+        "id": 6,
+        "user": "prueba 2",
+        "task": "tarea2",
+        "status": "pending",
+        "start_date": "2023-03-28",
         "end_date": null
     }
 ]
