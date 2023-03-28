@@ -37,8 +37,6 @@ class task extends Model {
         }
         return null;
 
-
-
     }
 
     function intoJson($addTask){
@@ -67,19 +65,17 @@ class task extends Model {
     }
     
   
-
-    // function updateTask($data,$id){
-    //     $users= $this->tasks;
-    //     foreach($users as $i => $user){
-    //         if($user['id'] == $id){
-
-    //         }
-
-
-    // }
-
     function deleteTask($id){
 
+        $users = $this->tasks;       
+        foreach ($users as $i=>$user) {
+            if( $user [$id] == $id ){
+                unset($users[$i]); 
+
+                $this-> intoJson($users);
+            }        
+        }
+        return $users;
         
     }
 
@@ -93,6 +89,7 @@ class task extends Model {
                 $this -> intoJson($data);
             }
         }
+        
     }
 
     function editTask($id,$user,$taskName,$status){
