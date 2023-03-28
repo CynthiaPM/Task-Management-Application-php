@@ -24,8 +24,6 @@ class TaskController extends Controller
 		$this->view->content = $taskList->getTaskById($_GET['id']);
 	}
 
-	public function addTaskAction() {
-	}
 	public function createTaskAction() {
 		$taskList = new task();
 		$isValid = true;
@@ -50,7 +48,7 @@ class TaskController extends Controller
 			}
 			// End of validation
 			if ($isValid) {
-				$taskList->createTask($_GET["id"], $_POST['user'], $_POST['task'], $_POST['status'], $_GET["start_date"]);
+				$taskList->createTask($_POST['user'], $_POST['task']);
 				header('Location: index');
 				exit;
 			}

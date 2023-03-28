@@ -1,5 +1,4 @@
 
-<?php include __DIR__ .'/../models/task.class.php' ?>
 <?php $task = $this->content; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,22 +12,22 @@
 <body class="bg-amber-100">
 <div class="container mx-auto max-w-2xl mt-20">
     <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-center my-16 ">Add your task!</h1>
-    <form action="create" method="post">
+    <form action="" method="post">
     <div class="max-w-sm mx-auto ">
         <fieldset class= "grid justify-center border border-blue-700 p-4 bg-blue-200">
         <div class="m-3">   
         <label for="user">User
-                <input type="text" id="user"  class=" border border-black rounded-xl">
+                <input type="text" id="user" name="user" class=" border border-black rounded-xl" required>
             </label>
         </div>
         <div class="m-3"> 
         <label for="task">Task
-                <input type="text" id="task" class=" border border-black rounded-xl">
+                <input type="text" id="task" name="task" class=" border border-black rounded-xl" required>
             </label>
             </div>  
         <div  class=" text-center m-5">  
             
-            <button type="submit" value="create task" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded cursor-pointer">add task</button>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded cursor-pointer">add task</button>
            
         </div>         
             
