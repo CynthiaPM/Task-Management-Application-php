@@ -45,12 +45,12 @@ class task extends Model {
         file_put_contents(__DIR__ . '../../../web/database.json', json_encode($addTask, JSON_PRETTY_PRINT));
     }
 
-   
+
 
     function createTask($user, $task){
         $data= array();
 
-        $lastTask = end($this->tasks);
+$lastTask = end($this->tasks);
         $newId = $lastTask['id'] + 1;
 
         $data['id'] = $newId;
@@ -66,8 +66,6 @@ class task extends Model {
         
     }
     
-  
-
     // function updateTask($data,$id){
     //     $users= $this->tasks;
     //     foreach($users as $i => $user){
@@ -78,9 +76,13 @@ class task extends Model {
 
     // }
 
-    function deleteTask($id){
-
-        
+function deleteTask($id){
+       
+   $users = $this->tasks;       
+    foreach ($users as $user) {
+        unset($user["id"]);
+        }
+        header("Location: index.php");
     }
 
     function completeTask($id){
