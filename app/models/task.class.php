@@ -79,11 +79,13 @@ $lastTask = end($this->tasks);
 function deleteTask($id){
        
    $users = $this->tasks;       
-    foreach ($users as $user) {
-        unset($user["id"]);
+    foreach ($users as $i =>$user) {
+        if($user ['id'] == $id)
+         unset($users[$i]);
+
+         $this-> intoJson($users);
         }
-        header("Location: index.php");
-    }
+   }
 
     function completeTask($id){
         $data= $this -> tasks;
