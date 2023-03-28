@@ -14,7 +14,8 @@ $routes = array(
 	'/view' => 'task#viewTask',
 	'/create' => 'task#createTask',
 	'/addTask' => 'task#addTask',
-	'/editTask' => 'task#editTask'
+	'/editTask' => 'task#editTask',
+	'/deleteTask' => 'task#deleteTask'
 	
 
 );

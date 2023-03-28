@@ -50,7 +50,7 @@ class TaskController extends Controller
 			}
 			// End of validation
 			if ($isValid) {
-				$taskList->createTask($_GET["id"], $_POST['user'], $_POST['task'], $_POST['status'], $_GET["start_date"]);
+				$taskList->createTask($_POST['user'], $_POST['task'], $_POST['status'], $_GET["start_date"]);
 				header('Location: index');
 				exit;
 			}
