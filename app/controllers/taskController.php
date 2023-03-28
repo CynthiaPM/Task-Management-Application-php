@@ -80,14 +80,16 @@ class TaskController extends Controller
 			}
 
 			header( 'location: index');
-
-		}
-
-		
-		
-		
+		}		
 					
 	}
+
+	public function deleteAction(){
+        $taskList= new task();
+        $this->view->content = $taskList-> deleteTask($_GET['id']);
+
+        header( 'location: index');
+    }
 
 }
 
