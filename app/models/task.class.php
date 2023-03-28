@@ -45,10 +45,28 @@ class task extends Model {
         file_put_contents(__DIR__ . '../../../web/database.json', json_encode($addTask, JSON_PRETTY_PRINT));
     }
 
-    function createTask($data){
+   
 
+    function createTask($id, $user, $task, $status, $start_date){
+       
+        $data = $this ->tasks;
+
+        $lastTask = end($this->tasks);
+        $newId = $lastTask['id'] + 1;
+
+        $data['id'] = $newId;
+        $data['user'] = $user;
+        $data['task'] = $task;
+        $data['status'] = 'pending';
+        $data['start_date'] = date('Y-m-d h:i:sa');
+
+        $this->tasks[] = $data;
+        $this->intoJson($this->tasks);
+        return $user;
         
     }
+    
+  
 
     // function updateTask($data,$id){
     //     $users= $this->tasks;
@@ -75,8 +93,6 @@ class task extends Model {
                 $this -> intoJson($data);
             }
         }
-
-
     }
 
     function editTask($id,$user,$taskName,$status){

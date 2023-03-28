@@ -24,9 +24,39 @@ class TaskController extends Controller
 		$this->view->content = $taskList->getTaskById($_GET['id']);
 	}
 
-	public function addTaskAction(){
-		$this->view->content(); 
+	public function addTaskAction() {
 	}
+	public function createTaskAction() {
+		$taskList = new task();
+		$isValid = true;
+
+		$errors = [
+			'id' => '',
+			'user' => "",
+			'task' => "",
+			'status' => "",
+			'start_date' => "",
+		];
+		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+			$data = $_POST;
+			// Start of validation
+			if (!$data['user']) {
+				$isValid = false;
+				$errors['user'] = 'Name is mandatory';
+			}
+			if (!$data['task']) {
+				$isValid = false;
+				$errors['task'] = 'Task is required';
+			}
+			// End of validation
+			if ($isValid) {
+				$taskList->createTask($_GET["id"], $_POST['user'], $_POST['task'], $_POST['status'], $_GET["start_date"]);
+				header('Location: index');
+				exit;
+			}
+		}
+		
+	}	
 
 	public function editTaskAction(){
 		$taskList= new task();
