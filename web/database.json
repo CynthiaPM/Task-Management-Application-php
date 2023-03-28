@@ -35,8 +35,728 @@
         "id": 5,
         "user": "Michael",
         "task": "Present project to stakeholders",
-        "status": "pending",
+        "status": "completed",
         "start_date": "2023-03-15",
+        "end_date": "2023-03-28"
+    },
+    {
+        "0": {
+            "id": 1,
+            "user": "experimento8",
+            "task": "Complete project proposal",
+            "status": "pending",
+            "start_date": "2023-03-17",
+            "end_date": "2023-03-27"
+        },
+        "1": {
+            "id": 2,
+            "user": "vanesa28",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-10",
+            "end_date": "2023-03-27"
+        },
+        "2": {
+            "id": 3,
+            "user": "nuevo intento1",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-01-05",
+            "end_date": "2023-03-27"
+        },
+        "3": {
+            "id": 4,
+            "user": "nuevl",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-20",
+            "end_date": "2023-03-30"
+        },
+        "4": {
+            "id": 5,
+            "user": "Michael",
+            "task": "Present project to stakeholders",
+            "status": "pending",
+            "start_date": "2023-03-15",
+            "end_date": null
+        },
+        "id": 6,
+        "user": "prueba2",
+        "task": "tarea2",
+        "status": "pending",
+        "start_date": "2023-03-28",
+        "end_date": null
+    },
+    {
+        "0": {
+            "id": 1,
+            "user": "experimento8",
+            "task": "Complete project proposal",
+            "status": "pending",
+            "start_date": "2023-03-17",
+            "end_date": "2023-03-27"
+        },
+        "1": {
+            "id": 2,
+            "user": "vanesa28",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-10",
+            "end_date": "2023-03-27"
+        },
+        "2": {
+            "id": 3,
+            "user": "nuevo intento1",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-01-05",
+            "end_date": "2023-03-27"
+        },
+        "3": {
+            "id": 4,
+            "user": "nuevl",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-20",
+            "end_date": "2023-03-30"
+        },
+        "4": {
+            "id": 5,
+            "user": "Michael",
+            "task": "Present project to stakeholders",
+            "status": "completed",
+            "start_date": "2023-03-15",
+            "end_date": "2023-03-28"
+        },
+        "5": {
+            "0": {
+                "id": 1,
+                "user": "experimento8",
+                "task": "Complete project proposal",
+                "status": "pending",
+                "start_date": "2023-03-17",
+                "end_date": "2023-03-27"
+            },
+            "1": {
+                "id": 2,
+                "user": "vanesa28",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-10",
+                "end_date": "2023-03-27"
+            },
+            "2": {
+                "id": 3,
+                "user": "nuevo intento1",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-01-05",
+                "end_date": "2023-03-27"
+            },
+            "3": {
+                "id": 4,
+                "user": "nuevl",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-20",
+                "end_date": "2023-03-30"
+            },
+            "4": {
+                "id": 5,
+                "user": "Michael",
+                "task": "Present project to stakeholders",
+                "status": "pending",
+                "start_date": "2023-03-15",
+                "end_date": null
+            },
+            "id": 6,
+            "user": "prueba2",
+            "task": "tarea2",
+            "status": "pending",
+            "start_date": "2023-03-28",
+            "end_date": null
+        },
+        "id": 7,
+        "user": "levi",
+        "task": "tarea2",
+        "status": "pending",
+        "start_date": "2023-03-28",
+        "end_date": null
+    },
+    {
+        "0": {
+            "id": 1,
+            "user": "experimento8",
+            "task": "Complete project proposal",
+            "status": "pending",
+            "start_date": "2023-03-17",
+            "end_date": "2023-03-27"
+        },
+        "1": {
+            "id": 2,
+            "user": "vanesa28",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-10",
+            "end_date": "2023-03-27"
+        },
+        "2": {
+            "id": 3,
+            "user": "nuevo intento1",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-01-05",
+            "end_date": "2023-03-27"
+        },
+        "3": {
+            "id": 4,
+            "user": "nuevl",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-20",
+            "end_date": "2023-03-30"
+        },
+        "4": {
+            "id": 5,
+            "user": "Michael",
+            "task": "Present project to stakeholders",
+            "status": "completed",
+            "start_date": "2023-03-15",
+            "end_date": "2023-03-28"
+        },
+        "5": {
+            "0": {
+                "id": 1,
+                "user": "experimento8",
+                "task": "Complete project proposal",
+                "status": "pending",
+                "start_date": "2023-03-17",
+                "end_date": "2023-03-27"
+            },
+            "1": {
+                "id": 2,
+                "user": "vanesa28",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-10",
+                "end_date": "2023-03-27"
+            },
+            "2": {
+                "id": 3,
+                "user": "nuevo intento1",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-01-05",
+                "end_date": "2023-03-27"
+            },
+            "3": {
+                "id": 4,
+                "user": "nuevl",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-20",
+                "end_date": "2023-03-30"
+            },
+            "4": {
+                "id": 5,
+                "user": "Michael",
+                "task": "Present project to stakeholders",
+                "status": "pending",
+                "start_date": "2023-03-15",
+                "end_date": null
+            },
+            "id": 6,
+            "user": "prueba2",
+            "task": "tarea2",
+            "status": "pending",
+            "start_date": "2023-03-28",
+            "end_date": null
+        },
+        "6": {
+            "0": {
+                "id": 1,
+                "user": "experimento8",
+                "task": "Complete project proposal",
+                "status": "pending",
+                "start_date": "2023-03-17",
+                "end_date": "2023-03-27"
+            },
+            "1": {
+                "id": 2,
+                "user": "vanesa28",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-10",
+                "end_date": "2023-03-27"
+            },
+            "2": {
+                "id": 3,
+                "user": "nuevo intento1",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-01-05",
+                "end_date": "2023-03-27"
+            },
+            "3": {
+                "id": 4,
+                "user": "nuevl",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-20",
+                "end_date": "2023-03-30"
+            },
+            "4": {
+                "id": 5,
+                "user": "Michael",
+                "task": "Present project to stakeholders",
+                "status": "completed",
+                "start_date": "2023-03-15",
+                "end_date": "2023-03-28"
+            },
+            "5": {
+                "0": {
+                    "id": 1,
+                    "user": "experimento8",
+                    "task": "Complete project proposal",
+                    "status": "pending",
+                    "start_date": "2023-03-17",
+                    "end_date": "2023-03-27"
+                },
+                "1": {
+                    "id": 2,
+                    "user": "vanesa28",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-10",
+                    "end_date": "2023-03-27"
+                },
+                "2": {
+                    "id": 3,
+                    "user": "nuevo intento1",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-01-05",
+                    "end_date": "2023-03-27"
+                },
+                "3": {
+                    "id": 4,
+                    "user": "nuevl",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-20",
+                    "end_date": "2023-03-30"
+                },
+                "4": {
+                    "id": 5,
+                    "user": "Michael",
+                    "task": "Present project to stakeholders",
+                    "status": "pending",
+                    "start_date": "2023-03-15",
+                    "end_date": null
+                },
+                "id": 6,
+                "user": "prueba2",
+                "task": "tarea2",
+                "status": "pending",
+                "start_date": "2023-03-28",
+                "end_date": null
+            },
+            "id": 7,
+            "user": "levi",
+            "task": "tarea2",
+            "status": "pending",
+            "start_date": "2023-03-28",
+            "end_date": null
+        },
+        "id": 8,
+        "user": "persona4",
+        "task": "tarea4",
+        "status": "pending",
+        "start_date": "2023-03-28",
+        "end_date": null
+    },
+    {
+        "0": {
+            "id": 1,
+            "user": "experimento8",
+            "task": "Complete project proposal",
+            "status": "pending",
+            "start_date": "2023-03-17",
+            "end_date": "2023-03-27"
+        },
+        "1": {
+            "id": 2,
+            "user": "vanesa28",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-10",
+            "end_date": "2023-03-27"
+        },
+        "2": {
+            "id": 3,
+            "user": "nuevo intento1",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-01-05",
+            "end_date": "2023-03-27"
+        },
+        "3": {
+            "id": 4,
+            "user": "nuevl",
+            "task": "Complete project proposal",
+            "status": "completed",
+            "start_date": "2023-03-20",
+            "end_date": "2023-03-30"
+        },
+        "4": {
+            "id": 5,
+            "user": "Michael",
+            "task": "Present project to stakeholders",
+            "status": "completed",
+            "start_date": "2023-03-15",
+            "end_date": "2023-03-28"
+        },
+        "5": {
+            "0": {
+                "id": 1,
+                "user": "experimento8",
+                "task": "Complete project proposal",
+                "status": "pending",
+                "start_date": "2023-03-17",
+                "end_date": "2023-03-27"
+            },
+            "1": {
+                "id": 2,
+                "user": "vanesa28",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-10",
+                "end_date": "2023-03-27"
+            },
+            "2": {
+                "id": 3,
+                "user": "nuevo intento1",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-01-05",
+                "end_date": "2023-03-27"
+            },
+            "3": {
+                "id": 4,
+                "user": "nuevl",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-20",
+                "end_date": "2023-03-30"
+            },
+            "4": {
+                "id": 5,
+                "user": "Michael",
+                "task": "Present project to stakeholders",
+                "status": "pending",
+                "start_date": "2023-03-15",
+                "end_date": null
+            },
+            "id": 6,
+            "user": "prueba2",
+            "task": "tarea2",
+            "status": "pending",
+            "start_date": "2023-03-28",
+            "end_date": null
+        },
+        "6": {
+            "0": {
+                "id": 1,
+                "user": "experimento8",
+                "task": "Complete project proposal",
+                "status": "pending",
+                "start_date": "2023-03-17",
+                "end_date": "2023-03-27"
+            },
+            "1": {
+                "id": 2,
+                "user": "vanesa28",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-10",
+                "end_date": "2023-03-27"
+            },
+            "2": {
+                "id": 3,
+                "user": "nuevo intento1",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-01-05",
+                "end_date": "2023-03-27"
+            },
+            "3": {
+                "id": 4,
+                "user": "nuevl",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-20",
+                "end_date": "2023-03-30"
+            },
+            "4": {
+                "id": 5,
+                "user": "Michael",
+                "task": "Present project to stakeholders",
+                "status": "completed",
+                "start_date": "2023-03-15",
+                "end_date": "2023-03-28"
+            },
+            "5": {
+                "0": {
+                    "id": 1,
+                    "user": "experimento8",
+                    "task": "Complete project proposal",
+                    "status": "pending",
+                    "start_date": "2023-03-17",
+                    "end_date": "2023-03-27"
+                },
+                "1": {
+                    "id": 2,
+                    "user": "vanesa28",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-10",
+                    "end_date": "2023-03-27"
+                },
+                "2": {
+                    "id": 3,
+                    "user": "nuevo intento1",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-01-05",
+                    "end_date": "2023-03-27"
+                },
+                "3": {
+                    "id": 4,
+                    "user": "nuevl",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-20",
+                    "end_date": "2023-03-30"
+                },
+                "4": {
+                    "id": 5,
+                    "user": "Michael",
+                    "task": "Present project to stakeholders",
+                    "status": "pending",
+                    "start_date": "2023-03-15",
+                    "end_date": null
+                },
+                "id": 6,
+                "user": "prueba2",
+                "task": "tarea2",
+                "status": "pending",
+                "start_date": "2023-03-28",
+                "end_date": null
+            },
+            "id": 7,
+            "user": "levi",
+            "task": "tarea2",
+            "status": "pending",
+            "start_date": "2023-03-28",
+            "end_date": null
+        },
+        "7": {
+            "0": {
+                "id": 1,
+                "user": "experimento8",
+                "task": "Complete project proposal",
+                "status": "pending",
+                "start_date": "2023-03-17",
+                "end_date": "2023-03-27"
+            },
+            "1": {
+                "id": 2,
+                "user": "vanesa28",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-10",
+                "end_date": "2023-03-27"
+            },
+            "2": {
+                "id": 3,
+                "user": "nuevo intento1",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-01-05",
+                "end_date": "2023-03-27"
+            },
+            "3": {
+                "id": 4,
+                "user": "nuevl",
+                "task": "Complete project proposal",
+                "status": "completed",
+                "start_date": "2023-03-20",
+                "end_date": "2023-03-30"
+            },
+            "4": {
+                "id": 5,
+                "user": "Michael",
+                "task": "Present project to stakeholders",
+                "status": "completed",
+                "start_date": "2023-03-15",
+                "end_date": "2023-03-28"
+            },
+            "5": {
+                "0": {
+                    "id": 1,
+                    "user": "experimento8",
+                    "task": "Complete project proposal",
+                    "status": "pending",
+                    "start_date": "2023-03-17",
+                    "end_date": "2023-03-27"
+                },
+                "1": {
+                    "id": 2,
+                    "user": "vanesa28",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-10",
+                    "end_date": "2023-03-27"
+                },
+                "2": {
+                    "id": 3,
+                    "user": "nuevo intento1",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-01-05",
+                    "end_date": "2023-03-27"
+                },
+                "3": {
+                    "id": 4,
+                    "user": "nuevl",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-20",
+                    "end_date": "2023-03-30"
+                },
+                "4": {
+                    "id": 5,
+                    "user": "Michael",
+                    "task": "Present project to stakeholders",
+                    "status": "pending",
+                    "start_date": "2023-03-15",
+                    "end_date": null
+                },
+                "id": 6,
+                "user": "prueba2",
+                "task": "tarea2",
+                "status": "pending",
+                "start_date": "2023-03-28",
+                "end_date": null
+            },
+            "6": {
+                "0": {
+                    "id": 1,
+                    "user": "experimento8",
+                    "task": "Complete project proposal",
+                    "status": "pending",
+                    "start_date": "2023-03-17",
+                    "end_date": "2023-03-27"
+                },
+                "1": {
+                    "id": 2,
+                    "user": "vanesa28",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-10",
+                    "end_date": "2023-03-27"
+                },
+                "2": {
+                    "id": 3,
+                    "user": "nuevo intento1",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-01-05",
+                    "end_date": "2023-03-27"
+                },
+                "3": {
+                    "id": 4,
+                    "user": "nuevl",
+                    "task": "Complete project proposal",
+                    "status": "completed",
+                    "start_date": "2023-03-20",
+                    "end_date": "2023-03-30"
+                },
+                "4": {
+                    "id": 5,
+                    "user": "Michael",
+                    "task": "Present project to stakeholders",
+                    "status": "completed",
+                    "start_date": "2023-03-15",
+                    "end_date": "2023-03-28"
+                },
+                "5": {
+                    "0": {
+                        "id": 1,
+                        "user": "experimento8",
+                        "task": "Complete project proposal",
+                        "status": "pending",
+                        "start_date": "2023-03-17",
+                        "end_date": "2023-03-27"
+                    },
+                    "1": {
+                        "id": 2,
+                        "user": "vanesa28",
+                        "task": "Complete project proposal",
+                        "status": "completed",
+                        "start_date": "2023-03-10",
+                        "end_date": "2023-03-27"
+                    },
+                    "2": {
+                        "id": 3,
+                        "user": "nuevo intento1",
+                        "task": "Complete project proposal",
+                        "status": "completed",
+                        "start_date": "2023-01-05",
+                        "end_date": "2023-03-27"
+                    },
+                    "3": {
+                        "id": 4,
+                        "user": "nuevl",
+                        "task": "Complete project proposal",
+                        "status": "completed",
+                        "start_date": "2023-03-20",
+                        "end_date": "2023-03-30"
+                    },
+                    "4": {
+                        "id": 5,
+                        "user": "Michael",
+                        "task": "Present project to stakeholders",
+                        "status": "pending",
+                        "start_date": "2023-03-15",
+                        "end_date": null
+                    },
+                    "id": 6,
+                    "user": "prueba2",
+                    "task": "tarea2",
+                    "status": "pending",
+                    "start_date": "2023-03-28",
+                    "end_date": null
+                },
+                "id": 7,
+                "user": "levi",
+                "task": "tarea2",
+                "status": "pending",
+                "start_date": "2023-03-28",
+                "end_date": null
+            },
+            "id": 8,
+            "user": "persona4",
+            "task": "tarea4",
+            "status": "pending",
+            "start_date": "2023-03-28",
+            "end_date": null
+        },
+        "id": 9,
+        "user": "persona 5",
+        "task": "tarea 5",
+        "status": "pending",
+        "start_date": "2023-03-28",
         "end_date": null
     }
 ]

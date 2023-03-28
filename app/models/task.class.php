@@ -47,7 +47,7 @@ class task extends Model {
 
    
 
-    function createTask($id, $user, $task, $status, $start_date){
+    function createTask($user, $task){
        
         $data = $this ->tasks;
 
@@ -58,7 +58,8 @@ class task extends Model {
         $data['user'] = $user;
         $data['task'] = $task;
         $data['status'] = 'pending';
-        $data['start_date'] = date('Y-m-d h:i:sa');
+        $data['start_date'] = date('Y-m-d');
+        $data['end_date']= null;
 
         $this->tasks[] = $data;
         $this->intoJson($this->tasks);
