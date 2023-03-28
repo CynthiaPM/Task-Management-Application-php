@@ -48,8 +48,7 @@ class task extends Model {
    
 
     function createTask($user, $task){
-       
-        $data = $this ->tasks;
+        $data= array();
 
         $lastTask = end($this->tasks);
         $newId = $lastTask['id'] + 1;
@@ -97,7 +96,7 @@ class task extends Model {
     }
 
     function editTask($id,$user,$taskName,$status){
-
+        //traigo todo el array
         $data = $this ->tasks;
         //busco en el array de tareas tomando en cuenta el indice
         foreach ($data as $i => $dataChange){
