@@ -1,3 +1,39 @@
+# Task Management Application
+
+Welcome to the Task Management Application! This project was part of my training at IT Academy, where I had the opportunity to work with a custom-made framework. The goal was to create an application that allows users to manage a list of tasks. The application covers creating, updating, and deleting tasks, as well as listing tasks with their statuses and timestamps.
+
+## Features
+
+The Task Management Application includes the following features:
+
+- **Task Creation:** Users can add new tasks to the list, including the task's description, start and end times, and the user who created it.
+- **Task Status:** Each task can have one of three statuses: "Pending," "In Progress," or "Completed."
+- **Updating Tasks:** Users have the ability to update the details of a task, including its description, status, and timestamps.
+- **Deleting Tasks:** Users can remove tasks from the list.
+- **Listing Tasks:** The application provides the capability to list all tasks or retrieve details about a specific task.
+- **Responsive Design:** The front-end of the application was built using the Tailwind CSS framework, ensuring a responsive and user-friendly experience.
+
+## How to Use
+
+To use the Task Management Application:
+
+1. Clone or download this repository to your local machine.
+2. Set up a local development environment with PHP and a web server.
+3. Import the provided framework and project files.
+4. Configure the database connection settings in the framework.
+5. Use your preferred web browser to access the application.
+
+Follow the application's user interface to create, update, delete, and list tasks. Remember to adhere to the Gitflow workflow and use GitHub for version control.
+
+## Technologies Used
+
+- PHP: Used for the back-end logic and interaction with the custom framework.
+- Tailwind CSS: Utilized for the responsive front-end design.
+
+## Acknowledgements
+
+This project was completed as part of the IT Academy training program, where I learned how to work with a custom-made framework, practice Gitflow, and build a functional task management application.
+
 # PHP initial Project
 Main structure of php project. Folders / files:
 - **app**
@@ -75,7 +111,6 @@ If a route doesn’t exist, then the error controller is hit.
 If some other exception was thrown, the error controller is hit.
 As default, the error controller just shows the exception occured, so remember
 to style the error controller’s view file (app/views/error/error.phtml)
-
 
 ### Utilities
 - [PHP Developers Guide](https://www.php.net/manual/en/index.php).
